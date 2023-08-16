@@ -3,22 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
-body {background-color:#93bedf;}
-
-
-.contenido > * {
-    flex: 1;
+body{
+ background-color:#93bedf;
 }
-
-
-
 
 footer {
     background-color: #93bedf;
     padding: 3rem;
     width:100%;
-
-
 }
 .redes {
     text-align: center;
@@ -166,14 +158,20 @@ footer {
     font-size: 4rem;
     border: 8px solid #93bedf;
 }
+
+
 .navbar{
-    height: 150px;
+    height: 175px;
     font-style: 'Belanosima';
-    font-size: 2rem;     
+    font-size: 2rem;
+     
 }
 
 .contenido__quien{
     list-style: none;
+    padding: 1rem;
+    margin-bottom: unset;
+    gap: 1rem;
 
     font-family: 'Belanosima';
     font-style:normal;
@@ -181,9 +179,9 @@ footer {
    
     background-color: #93bedf;
     display:grid;
-    height: 90vh;
+    min-height: 100vh;
     min-width:100%;
-    padding: 2rem;
+    
     
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: 1fr 1fr;
@@ -196,6 +194,7 @@ footer {
     display: grid;
     background-image:url(../img/imagenQuien.jpeg);
     background-position:bottom;
+    
    
     transition: 0.75s;
 
@@ -209,4 +208,5 @@ footer {
     
     grid-area:texto__quien;
 }
+
 
