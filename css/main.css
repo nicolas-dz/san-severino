@@ -166,6 +166,9 @@ footer {
     font-size: 2rem;
      
 }
+.nav-link:hover {
+    font-size: 2.5rem;
+}
 
 .contenido__quien{
     list-style: none;
