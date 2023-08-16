@@ -9,7 +9,7 @@ body{
 
 footer {
     background-color: #93bedf;
-    padding: 3rem;
+    padding: 1rem;
     width:100%;
 }
 .redes {
@@ -28,7 +28,7 @@ footer {
     align-content: center;
 
     justify-content:center;
-    padding: 2rem;
+    padding: 1rem;
 
 
 }
@@ -209,4 +209,46 @@ footer {
     grid-area:texto__quien;
 }
 
+ @media screen and (max-width:1000px) {
+    .inicio {
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr 1fr;
 
+    grid-template-areas: 
+    "quien        productos"
+    "servicios     contacto "; }
+    
+    .contenido__quien {
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 1fr 1fr 1fr 1fr ;
+    
+        grid-template-areas: 
+        "texto__quien texto__quien"
+        "texto__quien texto__quien"
+        "imagen-quien imagen-quien"
+        "imagen-quien imagen-quien";}
+       
+ }
+
+@media screen and (max-width:600px) {
+    .inicio {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+    grid-template-areas: 
+    "quien"
+    "productos"
+    "servicios"
+    "contacto"; 
+  
+}
+.contenido__quien {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr ;
+
+    grid-template-areas: 
+    "texto__quien "
+    "texto__quien "
+    "imagen-quien "
+    "imagen-quien ";}
+}
