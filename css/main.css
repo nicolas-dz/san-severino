@@ -40,6 +40,9 @@ footer {
     text-align: center;
 }
 
+
+
+
 .inicio {
     list-style: none;
     font-size: 2rem;
@@ -160,6 +163,9 @@ footer {
 }
 
 
+
+
+
 .navbar{
     height: 175px;
     font-style: 'Belanosima';
@@ -211,6 +217,9 @@ footer {
     
     grid-area:texto__quien;
 }
+
+
+
 
 
 .tarjetas__productos {
@@ -381,8 +390,9 @@ footer {
    
    
     grid-area:gps;
-
 }
+
+
 
 
 
@@ -415,11 +425,21 @@ footer {
             "formulario__contacto"
             "redes__contacto";
         }
-      
+        .contenido__servicios{
+            padding: 1rem;
+            gap: 0.5rem;
+                
+            grid-template-columns:1fr;
+            grid-template-rows: repeat(6,1fr);
         
-        
-
-       
+            grid-template-areas: 
+            "imagen-delivery"
+            "texto__delivery "
+            "imagen-local  "
+            "texto__local"
+            "imagen-party"
+            "texto__party";
+        }     
  }
 
 @media screen and (max-width:600px) {
